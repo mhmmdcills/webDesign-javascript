@@ -1,0 +1,76 @@
+
+
+ 
+<h2>1. Layang Layang (1/2 *d1 *d2)</h2>
+<input id="d1" type="number" placeholder="d1">
+*
+<input id="d2" type="number" placeholder="d2">
+=
+<span id="hasil"></span>
+
+<br>
+
+<button onclick="Jawaban()">Jumlahkan</button>	
+
+<script>
+  function Jawaban() {
+
+	//1. Layang Layang
+	var d1 = document.getElementById('d1').value;
+	var d2 = document.getElementById('d2').value;
+	var result = 1/2 * (d1 * d2);
+
+	document.getElementById('hasil').innerHTML= result;
+    }
+	
+</script>
+<hr>
+<br><br><br><br>
+
+<h2>2. Lingkaran (L=Phi*r**2)</h2>
+<input id="r" type="number" placeholder="r">
+=
+<span id="haseel"></span>
+
+<br>
+
+<button onclick="jumlahnya()">Jumlahkan</button>
+
+<script>
+
+	//2. Lingkaran
+	function jumlahnya() {
+	var Phi = 22/7;
+	var r = document.getElementById('r').value;
+	var result= Phi * r ** 2;
+
+	document.getElementById('haseel').innerHTML= result;
+	}
+</script>
+<hr>
+<br><br><br><br>
+
+<h2>3. Segitiga sama sikil (1/2 *a *t)</h2>
+<input id="a" type="number" placeholder="a">
+*
+<input id="t" type="number" placeholder="t">
+=
+<span id="hasilnya"></span>
+
+<br>
+
+<button onclick="jumlah()">Jumlahkan</button>
+
+<script>
+  function jumlah() {
+
+	//3. sEGITIGA SAMA KAKI
+	var a = document.getElementById('a').value;
+	var t = document.getElementById('t').value;
+	var result = 1/2 * (a * t);
+
+	document.getElementById('hasilnya').innerHTML= result;
+    }
+	
+</script>
+

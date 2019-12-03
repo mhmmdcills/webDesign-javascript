@@ -1,0 +1,24 @@
+<script>
+
+var angka=[23, 45,12, 32, 84];
+
+//method forEach
+angka.forEach(function(value, index) {
+	document.write( index + " : " + value );
+	document.write( "<br>" );
+});
+//method Map
+var contoh_map = angka.map(function(val) {
+	return val -(val *20/100);
+});
+
+	document.write( "<br>" );
+	document.write( contoh_map );
+//method Filter
+var contoh_filter = angka.filter( function(v) {
+	return v < 30000;
+});
+	document.write( "<br><br>" );
+	document.write( contoh_filter );
+
+</script>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Ujian Javascript
+	</title>
+	<style type="text/css">
+		body{
+		text-align:center;
+		background-image:url("http://getwallpapers.com/wallpaper/full/6/2/e/734487-new-snow-background-1920x1080-free-download.jpg");
+		background-size:2000px;
+		}
+
+		.big
+		{
+			font-size: 20px;
+		}
+
+		span
+		{
+			font-weight: bold;
+		}
+		.title{background-color:cyan; 
+		color:darkblue; 
+		text-align: center;   
+		margin-right: 200px;
+		margin-left: 200px;
+		font-weight:bold;
+		font-family:sans-serif;
+
+
+		}
+		h3{background-color:cyan; 
+		color:purple; 
+		text-align: center; 
+		font-size:20px;  
+		margin-right: 200px;
+		margin-left: 200px;
+		font-weight:bold;
+		font-family:sans-serif;
+
+		}
+	</style>
+</head>
+<body>
+	<!--page-->
+	<div class="wt"><h1 class="title">Temperatur</h1><br>
+	<h3>Penghitung Temperatur suhu :)</h3></div>
+		<br>
+	<div class="menu">
+			<div class="inp">
+				<p class="big">Berapa °C?</p>
+				<input id="celcius" type="Angka" placeholder="Ketik disini...">
+				<br><br>
+				<button onclick="convert()">Hitung</button>
+			</div>
+			<br>
+		<div>
+			<span id="suhu1"></span> K
+			<p>Kelvin</p>
+		</div>
+		<div>
+			<span id="suhu2"></span>° F
+			<p>Fahrenheit</p>
+		</div>
+
+		<div>
+			<span id="suhu4"></span>° De
+			<p>Delisle</p>
+		</div>
+		<div>
+			<span id="suhu3"></span>° Ra
+			<p>Rankine</p>
+		</div>
+		<div>
+			<span id="suhu5"></span>° N
+			<p>Newton</p>
+		</div>
+			<span id="suhu7"></span>° Ro
+			<p>Romer</p>
+		</div>
+		<div>
+			<span id="suhu6"></span>° R
+			<p>Reamur</p>
+		</div>
+		<div>
+
+	</div>
+	<script>
+		function convert()
+		{
+			var celcius = document.getElementById('celcius').value;
+			
+			var result1 = parseInt(celcius) + 273.15;
+			document.getElementById('suhu1').innerHTML = result1;
+
+			var f1 = parseInt(celcius) * 1.8;
+			var f2 = 32;
+			var result2 = f1 + f2;
+			document.getElementById('suhu2').innerHTML = result2;
+
+			var ra1 = 1.8;
+			var ra2 = parseInt(celcius) + 491.67;
+			var result3 = ra1 * ra2;
+			document.getElementById('suhu3').innerHTML = result3;
+
+			var de1 = 100 - parseInt(celcius);
+			var de2 = 1.5;
+			var result4 = de1 * de2 ;
+			document.getElementById('suhu4').innerHTML = result4;
+
+			var n1 = parseInt(celcius) * 33;
+			var n2 = 100;
+			var result5 = n1 / n2;
+			document.getElementById('suhu5').innerHTML = result5;
+
+			var result6 = parseInt(celcius) * 0.8;
+			document.getElementById('suhu6').innerHTML = result6;
+
+			var ro1 = parseInt(celcius) * 21;
+			var ro2 = 40;
+			var ro3 = 7.5;
+			var result7 =  ro1 / ro2 + ro3;
+			document.getElementById('suhu7').innerHTML = result7;
+		}
+	</script>
+</body>
+</html>

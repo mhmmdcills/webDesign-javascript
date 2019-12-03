@@ -1,0 +1,240 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+	<title>Array Method Javascript</title>
+
+<style>
+
+h1 {
+ text-align:center;
+ color:brown;
+ background-color:lightblue; 
+ padding: 20px 20px 9px;
+ background: #9dd2ea;
+ background: linear-gradient(lightblue, lightgreen);
+ border-radius: 3px;
+ box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.9);
+ font-family:lobster;	
+}
+h4 {
+ text-align:center;
+ color:purple;
+ font-family:lobster;	
+}
+
+</style>
+
+</head>
+
+<body>
+	<h1>Javascript Array Method</h1>
+
+	<p>1. Konversi Array ke String 
+		<br></br>
+	Metode toString () mengembalikan array sebagai string yang dipisahkan koma:</p>
+	<p id="dadah" class="outcast"></p>
+
+		<hr><hr>
+
+	<p>2. Metode join () menggabungkan elemen array ke dalam string. 
+		<br></br>
+	Dalam contoh ini kita telah menggunakan "*" sebagai pemisah antara elemen::</p>
+	<p id="dadal" class="outcast"></p>
+
+
+		<hr><hr>
+
+	<p>3. Popping and pushing 
+		<br></br>
+	a. popping (Metode pop () menghapus elemen terakhir dari array.)</p>
+	<p id="dalu" class="outcast"></p>
+	<p id="dalan" class="outcast"></p>
+		<br></br>
+	<p>b. pushing (Metode push () menambahkan elemen baru ke array)</p>
+
+	<button onclick="ikiFunction()">Pencet Ajah</button>
+
+	<p id="demian" class="outcast"></p>
+		<hr><hr>
+
+	<p>4. Shift Method
+		<br></br>
+	Metode shift () menghapus elemen pertama array (dan "menggeser" semua elemen lainnya ke kiri):
+	<p id="dem1" class="outcast"></p>
+	<p id="dem2" class="outcast"></p>
+
+		<hr><hr>
+
+	<p>5. unShift Method
+		<br></br>
+	Metode unshift () menambahkan elemen baru ke awal array.:
+		<br>
+	<button onclick="moFunction()">Nak Coba?</button>
+	<p id="dendang" class="outcast"></p>
+		<hr><hr>
+	<p>6. Changing method
+		<br></br>
+	mengganti suatu data dengan changing elemen, Elemen array diakses menggunakan nomor indeks mereka:
+
+	<p id="deo1" class="outcast"></p>
+	<p id="deo2" class="outcast"></p>
+
+		<hr><hr>
+
+	<p>7. Length
+		<br></br>
+	Properti length menyediakan cara mudah untuk menambahkan elemen baru ke array tanpa menggunakan metode push ():</p>
+		<button onclick="mmFunction()">Nak Coba ya?</button>
+
+	<p id="demmm" class="outcast"></p>
+
+		<hr><hr>
+
+	<p>8. Deleting Method
+		<br><br>
+	Menghapus elemen meninggalkan lubang yang tidak ditentukan dalam array:
+	<p id="demoni1" class="outcast"></p>
+	<p id="demoni2" class="outcast"></p>
+		<hr><hr>
+	<p>9. Splice 
+		<br></br>
+			Metode splice () menambahkan elemen baru ke array:
+	<button onclick="meowFunction()">Try it</button>
+
+	<p id="deme1" class="outcast"></p>
+	<p id="deme2" class="outcast"></p>
+		<hr><hr>
+	<h4>Array penggabungan/Merging</h4>
+		<hr><hr>
+	<p>10. Concat METHOD
+		<br></br>
+	Metode concat () digunakan untuk menggabungkan array (concatenate):
+	<p id="denia" class="outcast"></p>
+		<hr><hr>
+
+	<p>11. Slice method
+		<br><br>
+	Contoh ini meng-slices bagian array yang dimulai dari elemen array 1 ("serabi"):	
+	<p id="desa" class="outcast"></p>
+		<hr><hr>
+
+	<p>12. Automatic toString
+		<br></br>
+	ToString otomatis ()
+JavaScript secara otomatis mengkonversi array ke string yang dipisahkan koma ketika nilai primitif diharapkan.
+Ini selalu terjadi ketika Anda mencoba untuk output array<br>
+Metode toString () mengembalikan array sebagai string yang dipisahkan koma:
+	
+	<p id="dehhhhh" class="outcast"></p>
+
+<!-- 1. Konversi Array ke string -->
+<script>
+var onlen = ["Lazada", "Shopee", "Bukalapak", "Tokobagus"];
+document.getElementById("dadah").innerHTML = onlen.toString();
+</script>
+<!-- 2. Metode join () menggabungkan elemen array ke dalam string -->
+<script>
+var dadal = ["Pecel", "Peyek", "Rawon", "sOTO"];
+document.getElementById("dadal").innerHTML = dadal.join(" * ");
+</script>
+<!-- pop & push -->
+
+<!--a. pop-->
+<script>
+var buah = ["Pencit", "Jeruk", "Apel", "Keres"];
+document.getElementById("dalu").innerHTML = buah;
+buah.pop();
+document.getElementById("dalan").innerHTML = buah;
+</script>
+<!--b. push-->
+<script>
+var susu = ["Enak", "Indomilk", "Ultra", "Bendera"];
+document.getElementById("demian").innerHTML = susu;
+
+function ikiFunction() {
+  susu.push("ovaltine");
+  document.getElementById("demian").innerHTML = susu;
+}
+</script>
+
+<!--4. shifft-->
+<script>
+var kuekering = ["Kastengel", "Nastar", "Kekkacang", "Putrisalju"];
+document.getElementById("dem1").innerHTML = kuekering;
+kuekering.shift();
+document.getElementById("dem2").innerHTML = kuekering;
+</script>
+
+<!--5. unshifft-->
+<script>
+var air = ["Leminerale", "AQUA", "Club", "Total"];
+document.getElementById("dendang").innerHTML = air;
+
+function moFunction() {
+  air.unshift("Flow");
+  document.getElementById("dendang").innerHTML = air;
+}
+</script>
+<!--6. Change-->
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("deo1").innerHTML = fruits;
+fruits[0] = "Kiwi";
+document.getElementById("deo2").innerHTML = fruits;
+</script>
+
+<!--7. Length-->
+<script>
+var fruit = ["Selimut", "Sprey", "Guling", "BOneka"];
+document.getElementById("demmm").innerHTML = fruit;
+
+function mmFunction() {
+  fruit[fruit.length] = "BantAl";
+  document.getElementById("demmm").innerHTML = fruit;
+}
+</script>
+<!--8. Deleting-->
+
+<script>
+var fruitsa = ["lychee", "pear", "Apple", "Banana"];
+document.getElementById("demoni1").innerHTML =
+"The first fruit is: " + fruitsa[0];
+delete fruitsa[0];
+document.getElementById("demoni2").innerHTML =
+"The first fruit is: " + fruitsa[0];
+</script>
+<!--9. Splice-->
+<script>
+var frits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("deme1").innerHTML = "Original Array:<br>" + frits;
+function meowFunction() {
+  frits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("deme2").innerHTML = "New Array:<br>" + frits;
+}
+</script>
+<!--10. the concat-->
+<script>
+var arr1 = ["Sesil", "Pricil"];
+var arr2 = ["Emila", "Tobi", "Lintang"];
+var arr3 = ["Robinhood", "Morgan"];
+
+var myChildren = arr1.concat(arr2, arr3); 
+
+document.getElementById("denia").innerHTML = myChildren;
+</script>
+<!--11. the slice-->
+<script>
+var jajan = ["Brubi", "Serabi", "Apem", "Lemper", "Mendut"];
+var icus = jajan.slice(1);
+document.getElementById("desa").innerHTML = jajan + "<br><br>" + icus;
+</script>
+<!--12. automatic-->
+<script>
+var fuits = ["Sonice", "Kimbo", "Sogood", "Bernard"];
+document.getElementById("dehhhhh").innerHTML = fuits.toString();
+</script>
+
+
+</body>
+</html>

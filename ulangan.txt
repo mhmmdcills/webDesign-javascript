@@ -1,0 +1,5 @@
+perbedaan web dinamis statis
+a. dinamis
+terjadi interaksi seperti komentar, berisi php, javascript dll.,menggunakan database, biasa diupdaate
+b. statis
+tidak diupdate, HTML saja, tidak pakai komentar/interaksi, tidak pakai database

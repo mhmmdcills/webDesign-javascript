@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Iteration()</h2>
+
+<p>1. For Each</p>
+
+<p id="dania"></p>
+<br><hr><hr>
+<p>2. JavaScript Array.map()</p>
+
+<p id="dndang"></p>
+
+<br><hr><hr>
+<p>
+3. JavaScript Array..filter
+<br>filter Membuat array baru dengan semua elemen array yang lulus sebuah tes
+</p>
+
+<p id="demosyah"></p>
+
+<br><hr><hr>
+<p>4.JavaScript Array.reduce() :<br>Contoh ini menemukan jumlah semua angka dalam array<p>
+
+<p id="demmmm"></p>
+<br><hr><hr>
+<p>5. JavaScript Array.<br>Metode everyThe every () memeriksa apakah semua nilai array lulus tes.</p>
+
+<p id="deo"></p>
+<br><hr><hr>
+<p>6. javaScript Array.indexOf()</p>
+
+<p>7. JavaScript Array.find()</p>
+
+<p id="delio"></p>
+<br><hr><p><hr>JavaScript Array.findIndex()</p>
+
+<p id="demo"></p>
+<script>
+//1For Each
+var txt = "";
+var numbers = [42, 6, 9, 10, 25];
+numbers.forEach(myFunc);
+document.getElementById("dania").innerHTML = txt;
+
+function myFunc(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
+
+//2ARRAY MAP
+var numbers1 = [45, 9, 9, 16, 25];
+var numbers2 = numbers1.map(mFunction);
+
+document.getElementById("dndang").innerHTML = numbers2;
+
+function mFunction(value, index, array) {
+  return value * 2;
+}
+//3filter
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(mmnFunction);
+
+document.getElementById("demosyah").innerHTML = over18;
+
+function mmnFunction(value, index, array) {
+  return value > 18;
+}
+//4reduce
+//var numbers = [45, 4, 90, 26, 25];
+//var sum = numbers.reduce(moFunction);
+
+//document.getElementById("demmmm").innerHTML = "The sum is " + sum;
+
+//function moFunction(total, value, index, array) {
+  //return total + value;
+
+//5arrayevery
+var numbers = [45, 4, 9, 16, 29];
+var allOver18 = numbers.every(mfFunction);
+
+document.getElementById("deo").innerHTML = "All over 18 is " + allOver18;
+
+function mfFunction(value, index, array) {
+  return value > 18;
+}
+//6arraysome
+var numbers = [45, 4, 9, 16, 25];
+var someOver18 = numbers.some(myFunption);
+
+document.getElementById("demppp").innerHTML = "Some over 18 is " + someOver18;
+
+function myFunption(value, index, array) {
+  return value > 18;
+}
+//indexof
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.indexOf("Apple");
+document.getElementById("dems").innerHTML = "Apple is found in position " + a;
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFction);
+//find
+document.getElementById("delio").innerHTML = "First number over 18 is " + first;
+
+function myFction(value, index, array) {
+  return value > 18;
+}
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.findIndex(myFunction);
+
+document.getElementById("demo").innerHTML = "First number over 18 has index " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
+

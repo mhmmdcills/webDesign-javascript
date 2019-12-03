@@ -1,0 +1,29 @@
+Model data relasional didasarkan pada kumpulan tabel. Pengguna sistem basis data dapat meminta tabel-tabel ini, menyisipkan tupel baru, menghapus tupel, dan memperbarui (memodifikasi) tupel. Ada beberapa bahasa untuk mengekspresikan operasi ini.
+Skema suatu relasi mengacu pada desain logisnya, sementara instance relasi merujuk pada isinya pada suatu titik waktu. Skema suatu basis data dan turunan dari suatu basis data didefinisikan dengan cara yang sama. Skema suatu relasi meliputi atributnya, dan secara opsional tipe atribut dan batasan pada relasi seperti batasan kunci primer dan asing.
+Superkey dari relasi adalah sekumpulan satu atau lebih atribut yang nilainya dijamin untuk mengidentifikasi tupel dalam relasi secara unik. Kunci kandidat adalah superkey minimal, yaitu, sekumpulan atribut yang membentuk superkey, tetapi tidak ada yang subsetnya adalah superkey. Salah satu kunci kandidat dari suatu relasi dipilih sebagai kunci utamanya.
+Kunci asing adalah seperangkat atribut dalam relasi referensi, sehingga untuk setiap tupel dalam relasi referensi, nilai atribut kunci asing dijamin akan terjadi sebagai nilai kunci primer tupel dalam relasi yang dirujuk.
+Diagram skema adalah penggambaran bergambar skema database yang menunjukkan hubungan dalam database, atributnya, dan kunci primer dan kunci asing.
+Bahasa kueri relasional menentukan satu set operasi yang beroperasi pada tabel, dan tabel output sebagai hasilnya. Operasi ini dapat digabungkan untuk mendapatkan ekspresi yang mengekspresikan permintaan yang diinginkan.
+Aljabar relasional menyediakan serangkaian operasi yang mengambil satu atau lebih relasi sebagai input dan mengembalikan relasi sebagai output. Bahasa query praktis seperti SQL didasarkan pada aljabar relasional, tetapi menambahkan sejumlah fitur sintaksis yang berguna.
+
+
+
+1.Struktur relasional database…
+
+Database relasional terdiri dari kumpulan tabel, yang masing-masing diberi nama unik. Sebagai contoh, perhatikan tabel instruktur pada Gambar 2.1, yang menyimpan informasi tentang instruktur. Tabel ini memiliki empat tajuk kolom: ID, nama, nama dept, dan gaji. Setiap baris tabel ini mencatat informasi tentang instruktur, yang terdiri dari ID instruktur, nama, nama dept, dan gaji. Demikian pula, tabel kursus Gambar 2.2 menyimpan informasi tentang kursus, yang terdiri dari id kursus, judul, nama dept, dan kredit, untuk setiap kursus. Perhatikan bahwa setiap instruktur diidentifikasi oleh nilai ID kolom, sementara setiap kursus diidentifikasi oleh nilai id kolom saja.
+
+
+
+
+
+
+Tugas tabel:
+Database inventaris kelas
+Terdiri dari dua tabel
+Pertama tabel barang
+Yang kedua tabel 
+
+Pada tabel barang menampung data nama barang,id barang, kondisi barang ,jumlah barang
+
+
+

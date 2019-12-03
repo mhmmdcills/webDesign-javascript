@@ -1,0 +1,11 @@
+<html>
+
+<head>
+<title>belajar HTML</title>
+</head>
+
+<body bgcolor="#magenta" topmargin="20" leftmargin="30" onload="alert('ini adalah pop up')">
+    Hello World!
+</body>
+
+</html>

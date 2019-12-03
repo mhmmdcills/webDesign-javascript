@@ -1,0 +1,18 @@
+/* pewarnaan yang tersering dipakai
+h1 {
+ color: #ddee00;
+}
+
+h1 {
+ color: rgb(200, 200, 200);
+}
+
+h1 {
+ border-style: solid;
+ border-width: 4px;
+ border-color: #00dd00
+}
+*/
+h1 {
+ border: 10px ridge #000000;
+}

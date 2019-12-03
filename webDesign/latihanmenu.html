@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>tampilan Menu (Anang)</title>
+<link href="https://fonts.googleapis.com/css?family=Underdog&display=swap" rel="stylesheet"> 
+<style>
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.menu {margin: 20px;
+	 background-color: #eeeeee;
+	 border:1px solid #e1e1e1;
+	 background: rgb(240,240,240);
+	 background: linear-gradient(0deg,rgba(221,240,220,1) 0%, rgba(249,249,249,1) 100%);
+	 border-radius:9px;}
+	 
+	
+.menu li {display:block;
+		  float:left;
+		  border-right:1px solid #d9d9d9;
+		}
+.menu li a {font-family:underdog;
+			display:block;
+			text-decoration:none;
+		  	padding:20px;
+			color:#545454;}
+.menu li:first-child a{
+		border-radius:9px 0 0 9px;
+		}
+#huaa li a {border-bottom:0px ;
+		   }
+
+#mimi {border-radius:9px;
+	  }
+
+.menu li a:hover{
+	background:rgb(249,249,249);
+	background: linear-gradient(0deg,rgba(249,249,249,1) 0%, rgba(240,240,240,1) 100%);
+
+				}
+/*dropdown Menu*/
+.menu ul ul{
+			position:absolute;
+			background: rgb(240,240,240);
+			display:none;
+			border-bottom-left-radius:5px;
+			border-bottom-right-radius:5px;
+			border:0;
+			width:150px;
+			box-shadow:0 0px 2px #cccccc;
+			}
+.menu ul li:hover ul{
+			display:block;
+			}
+.menu ul ul li{
+			  float:none;
+			  border-right:0px;
+			  }
+
+.menu li li a{
+		padding: 20px;
+		position:relative;
+		}
+.menu li li a:after,
+.menu li li a:before{
+		height:1px;
+		width:110px;
+		left:20px;
+		bottom:0;
+		position:absolute;
+		background-color:#e1e1e1;
+		content:"";
+		}
+.menu li li a:before{
+		bottom:-1px;
+		background-color:#ffffff;
+		}
+.menu li li :first-child a{
+		border-radius:0;/*menghapus border raadius pada parentmenu*/
+		}
+.menu li li :first-child a:after,
+
+.menu li li :first-child a:before{
+		display:none;/*menghapus border radius dimenu paling bawah*/
+		}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+} 
+
+</style>
+</head>
+<body>
+	<div class="menu clearfix">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">Freebies</a>
+			<ul id="huaa">
+				<li><a href="#">Brushes</a></li>
+				<li><a href="#">Textures</a></li>
+				<li><a href="#">Icon Sets</a></li>
+				<li><a href="#">Patterns</a></li>
+				<li id="mimi"><a href="#">Vectors</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Showcase</a></li>
+		<li><a href="#">Our Blog</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	</div>
+<body>
+</html>

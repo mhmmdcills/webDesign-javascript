@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Ujian Triwulan 1 thx</title>
+	<style>
+#tlp{
+width:10px;
+}
+#msg{
+width:10px;
+}
+#thanks{
+width:200px;
+font-size:200px;
+}
+body {
+	background: #262626;
+}
+/* FOOTER */
+#footer {
+	max-width: 73.20644216691069vw;
+	min-width: 400px;
+	background: #eee;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+#footer p {
+	color: #7c7c7c;
+	font-size: 12.5px;
+	font-family: sans-serif;
+	line-height: 20px;
+}
+#footer div {
+	width: 230px;
+}
+#box1, #box2, #box3, #box4 {
+	padding: 50px 0px 20px 0px;
+	/*width: 240px;*/
+}
+#box1 {
+	/*box-sizing: border-box;*/
+}
+#box2 #last {
+	font-family: serif;
+}
+#box2 h1 {
+	padding-bottom: 20px;
+}
+#box2 a {
+	line-height: 35px;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: small;
+	position: relative;
+	transition: all 0.2s;
+}
+#box2 a:after {
+	content: "";
+	width: 220px;
+	height: 1px;
+	background: #c4c4c4;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+#box2 a:hover {
+	color: #ef454d;
+}
+h1 {
+	padding-bottom: 30px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #2c2c2c;
+}
+#box3 {
+	position: relative;
+}
+#box3 a {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	text-decoration: none;
+	color: #2c2c2c;
+	font-size: 12px; 
+	transition: all 0.3s;
+}
+#box3 a:hover {
+	color: gray;
+}
+#box4 input {
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 7px 5px;
+}
+#box4 input::placeholder {
+	color: #000;
+	font-weight: bold;	
+}
+#footer2 {
+	max-width: 73.20644216691069vw;
+	min-width: 400px;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	background: #1f232c;
+}
+#footer2 p {
+	font-size: 13px;
+	margin: 20px;
+	color: #737373;
+} 
+/*HEADER*/
+#header {
+	background: #fff;
+	max-width: 73.20644216691069vw;
+	min-width: 400px;
+	margin: auto;
+	display: flex;
+}
+#head_left {
+	width: 50%;
+	padding: 55px 20px;
+}
+#head_left img {
+	max-width: 80%;
+}
+#head_right {
+	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 20px;
+	justify-content: space-around;
+}
+#head_right #search {
+	align-self: flex-end;
+}
+#head_right #search input {
+	background: #1a1e25;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	padding: 5px 30px 5px 15px;
+	max-width: 170px;
+	font-size: 11px;
+	font-family: sans-serif;
+}
+#input {
+	position: relative;
+}
+#iconSearch {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+}
+#iconSearch img {
+	max-width: 15px;
+}
+#head_right #menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#head_right #menu a {
+	font-family: sans-serif; 
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	position: relative;
+}
+#head_right #menu a:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+#head_right #menu a:last-child:after {
+	background: #828282;
+}
+#head_right #menu a:last-child {
+	color: #828282;
+}
+#head_right #menu a:hover:after {
+	opacity: 1;
+}
+/* MIDDLE */
+#middle {
+	max-width: 73.20644216691069vw;
+	min-width: 400px;
+	background: #fff;
+	margin: auto;
+	border-top: 2px solid #262626;
+}
+#contact {
+	position: relative;
+	padding: 55px 20px;
+	background: #f5f5f6;
+}
+#contact img {
+	position: absolute;
+	/*border: 1px solid black;*/
+	bottom: -13px;
+	left: 22px;
+}
+#contact a {
+	text-decoration: none;
+	color: #000;
+	font-family: cursive;
+	font-size: 30px;
+	font-weight: lighter;
+}
+#main {
+	font-family: sans-serif;
+	font-size: 13.5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+#form {
+	width: 36.603221083455345vw;
+	min-width: 440px;
+	padding: 48px 25px;
+} 
+#form p {
+	color: #55505d;
+}
+#form form table td {
+	font-weight: bold;
+	padding: 5px 0px 5px 20px;
+	border: 1px solid rgba(255,255,255,0) /*black*/;
+	text-align: right;
+	/*position: relative;*/
+}
+#form form table td label {
+	position: relative;
+}
+#positioninggu {
+	position: relative;
+} 
+#positioninggu h3 {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+#form form table td:last-child {
+	text-align: left;
+} 
+#form form table span {
+	color: red;
+}
+#form form input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 23.792093704245975vw;
+	min-width: 225px;
+	padding: 7px;
+}
+.bintang {
+	position: absolute;
+	transform: translate(-7px,-2px);
+	font-size: 10px;
+	display: none;
+	left: 0;
+}
+#form form textarea {
+	width: 23.792093704245975vw;
+	min-width: 225px;
+	height: 120px;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+#questiones {
+	top: 10px;
+	position: absolute;
+}
+#form form table tr:last-child td {
+	text-align: left;
+}
+button {
+	color: white;
+	background: black;
+	font-weight: bolder;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 16px;
+	transition: transform 0.05s;
+}
+button:hover {
+	cursor: pointer;
+	transform: translateY(2px);
+}
+#sidebar {
+	width: 23.42606149341142vw;
+	min-width: 290px;
+}
+#sidebar_content {
+	padding: 40px 20px;
+}
+#sidebar_content p {
+	padding-bottom: 30px;
+	line-height: 23px;
+}
+#sidebar_content a {
+	text-decoration: none;
+	color: #000;
+	line-height: 20px;	
+}
+#sidebar_content a img {
+	width: 12px;
+}
+#sidebar_content #msg {
+	width: 14px;
+	transform: translateY(2px);
+}
+#maps { 
+	border:2px solid #ccc;
+	overflow:hidden;
+	min-width: 250px;
+	position: relative;
+	padding:2px 8px; 
+	margin: 35px 0px; 
+	border-radius: 5px;
+}
+#maps div {
+	position: absolute;
+	width: 80%;bottom: 10px;
+	left: 0;right: 0;
+	margin-left: auto;margin-right: auto;
+	color: #000;
+	text-align: center;
+}
+	</style>
+	
+</head>
+<body>
+	<div id="header">
+		<div id="head_left">
+			<a href="#"><img src="https://lh3.googleusercontent.com/dctGfywA-4SdAIQ_rCgZjOnHzdhiU8tk1TwgYO-umnneTuoclXETOh4OZJjK9CVq3gitOMGCGbiOg08waWYPjRj5nLXPOHxX0AK_WiovGY2m2KXeWx3o2QNqIlC8Ogz4EPMGOOENm9lzWAhsuomg-hcssZop7AF3mUAntCkFLYx4Ai0opnDxM0gxrfRl49b0v2RmRZH_gqxiyZa3X3eHCL15LUJWMTsLHhivl0wGOS475NoRU4iZ1VOLRhuqUtbZnP4IhvG94sA_rspieTU9elBB64ab-hlhJPkyC8Kb9yJGwJGEVU7qUK3OvUZikGoIHRLUFQUC20hVWx3yaexPmF35v3qYXI_LyKvw5l1Ok0vYXDj5dRcT-RUjWGxeOqFq41tzPf4JcsLQOHpa924AETX7R0YWIABJ5NLpoIcIGLJLsU2HBenCDdISo3WooVvArvpT6kkkluEpizl-TDKxX4HnVs3IszmRy1x3t1JhAHdgwYTs3MsUOIGCzLPiIymMUA_MIJBhXZYO8avybjTvs2Toqqq73uGc5yPSA5pTlZEsIFHvJQk25luRkEt1ZklZtu36JBjHLa3SS7Q96AkSQPfyYHSHl44Ut6b2avF-k1f5UKg402RTykMjcIMn9RSf_jzp09LWfjtak2mD4pKvQmtkROiiipY-spnna8f2yGOQ2_aMWWRFro85uoKi=w1279-h594?authuser=0"></a>
+		</div>
+		<div id="head_right">
+			<div id="search">
+				<div id="input"><input type="text" name="search" placeholder="Enter keywords...">
+					<div id="iconSearch"><a href="#search"><img src="https://lh3.googleusercontent.com/-fKK0O2Wp2TIcIeO05iClYTPIpFhtTveSR6ab0JUq-Qed6xPJTENpHm6f2jMlHtyFDhGNVtka_dOmmd41PKHRvvBXlRvvulLlnR-h42O8Usp5sr34VRjbXMhyYMZDCz32LtVHGEJO--ubmkWtgLJEfrNnWtk_nTi7-Q0Oz3PQ7OVKX2wFf8rsO6E6g13Sr6l3LcJ86OAly1dNhOAgTJKI2JYbFVGSXhWjsZ0iVhf1Hg-YTCkyw_YFj8V3_0Oil7zxrQaH_lDQKCYb1NhWzVwq3yc17ksEBvRghatqHnTJ-_MdPJemoHQoeF58wtRV4RHNFkdSpCoR3wbw-SbjJtRtIwc9O0MCm8EL0hL5PioBn8bftgi-TmD_8V04QqMES68_YI0TnGwFnz86QcEf9RxVHywsYdxpdjlHwRxOkJABnogKtDdOYoUyZYGhYyLZE64_nnY7gVjlz6zlct96fuMYoMet0K3qwZAWXl2U3StkPUsEJfhWSg6kfZ3uSReG4ij3_hbGtPqIt0f6HYfxcAf4VAneOIpNLtV-l5sgcjnrzf3mB7ZJsQfIpfXeexL61QlAoXlANh43v-kdMN_zgXOG3kNyaWh2z2XkhVPmdqkxJhCETUJMsWrIZ1ZGB6WW_IGZKtZLN9WUgu8wjMEyZLj3usBfsc6TYoHZClFNDUtyTB9dOHWi9ayEXakYKCV=w1279-h594?authuser=0"></a></div>
+				</div>
+			</div>
+			<div id="menu">
+				<a href="#">HOME</a>
+				<a href="#">ABOUT US</a>
+				<a href="#form">PORTOFOLIO</a>
+				<a href="#">BLOG</a>
+				<a href="#contact">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+	<div id="middle">
+		<div id="contact">
+			<h1>THANK YOU</h1>
+		</div>
+		<div id="main">
+			<div id="form">
+				<p>Thank you for contacting us.</p><br>
+				<p>We will be in touch shortly regarding your mail.</p>
+			</div>
+			<div id="sidebar">
+				<div id="sidebar_content">
+					<p>
+						<span style="font-weight: bold;">YourCompany</span><br>
+						1725 Slough Ave. <br>
+						18540 Scranton <br>
+						United States
+					</p>
+						<a href="#sidebar_content"><span><img id ="tlp"src="https://i0.wp.com/www.mtctutorials.com/wp-content/uploads/2019/04/call-png-icon-logo-black-flat.png?fit=299%2C305&ssl=1"></span>+1 555 123 8069</a><br> 
+						<a href="#sidebar_content"><span><img id="msg" src="https://cdn3.iconfinder.com/data/icons/web-ui-3/128/Chat2-2-512.png"></span> info@example.com</a> 
+					<div id="maps">
+						<iframe width="280" height="240" src="https://maps.google.com/maps?width=280&amp;height=240&amp;hl=en&amp;q=Scranton%2C%20United%20States+(Title)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						<div>
+							<small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">Embedgooglemaps IT</a> & <a href="http://lasvegasstatistics.embedgooglemaps.com">las vegas economy</a></small>
+						</div>
+						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="down"></div>
+	</div>
+	<div id="footer">
+		<div >
+			<div id="box1">
+				<h1>Contact Us</h1>
+				<p style="padding-bottom: 7px;">Company Name <br>Street Name & Number <br>Town <br>Postcode/Zip</p>
+				<p>Tel : xxxxx xxxxxxxxxx <br>Fax : xxxxx xxxxxxxxxx <br>Email : contact@mydomain.com</p>
+			</div>
+		</div>
+		<div>
+			<div id="box2">
+				<h1>Quick Links</h1>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2" id="last">Link Text Here</a><br>
+			</div>
+		</div>
+		<div>
+			<div id="box3">
+				<h1>From The Blog</h1>
+				<p style="padding-bottom: 7px;"> 
+					<span style="font-size: 14px;font-weight: bold;color: #43464e;">Blog Post Title</span><br>
+					Posted by Admin on Nov 14, 2019
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p><br>
+				<a href="#box3">Read More >></a>
+			</div>
+		</div>
+		<div>
+			<div id="box4">
+				<h1>Grab Our Newsletter</h1>
+				<form action="#box4" method="POST">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
+					<button type="submit">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer2">
+		<div id="copyright">
+			<p>Copyright © 2017 - All Rights Reserved</p>
+		</div>
+		<div id="pondok">
+			<p>PondokIT.org</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<html>
+<head>
+<style>
+h3 {color:purple; text-align: center; background-color:yellow;}
+h5 {text-align:center;}
+.duar {font-weight: bold;}
+</style>
+	<h3>String Method</h3>
+	<title>Event dan String Method</title>
+
+	<p class="duar">1. jumlah string(length):</p>
+
+	<p id="demah"></p>
+	
+	<hr><hr>
+
+	<p class="duar">2. Menentukan letak indeks yang dicari, terletak pada baris ke(indexof):</p>
+	
+	<p id="dadah"></p>
+	<h5> perlu diketahui bahwasannya metode indexOf ( ) tidak dapat mengambil nilai pencarian yang kuat (ekspresi reguler/regular expression)</h5>
+	<hr><hr>
+
+	<p class="duar">3. Mencari letak pertama, teletak pada(search):</p>
+
+	<p id="hiya"></p>
+	<h5>pada Metode search ( ) tidak dapat mengambil argumen posisi awal kedua/hanya pertama.</h5>
+	<hr><hr>
+
+	<p class="duar">4 *berikut mengekstraksi bagian string dan terdapat 3 macam</p>
+	<br><br>
+	<p class="duar">4a. the slice method , (mengekstrak bagian dari string dan mengembalikan dalam string baru) :</p>
+	
+	<p id="demo"></p>
+	<br><br>
+	<p class="duar">4b. Substring method (sama seperti slice tapi tidak  bisa minus):</p>
+
+	<p id="dendang"></p>
+
+	<br><br>
+
+	<p class="duar">4c. Replace/mengganti:</p>
+
+	<button onclick="myFunction()">	Cobalah gaes</button>
+
+	<p id="dahar">Please visit MieGacoan</p>
+
+	<hr><hr>
+	<p>5. Mengkonvers huruf besar dan kecil</p>
+
+	<br><br>
+
+	<p class="duar">5a. menjadi besar</p>
+
+	<button onclick="myFunction()">Cobak en</button>
+
+	<p id="delicate">Anya Geraldine</p>
+
+	<br><br>
+
+	<p class="duar">5b. besar jadi kecil</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="delo">PUNTEN SLUR!!!</p>
+
+	<hr><hr>
+	<p class="duar">6. menggabungklan dua method atau lebih(the concat):</p>
+	<p id="denda"></p>
+	
+	<hr><hr>
+	<br><br>
+	<p class="duar">7.menghilangkan spasi putih dari kedua sisi string (The trim): </p>
+	<button onclick="myFunction()">Try it</button>
+	<br></br>
+	<hr><hr>
+
+	<p class="duar">8. mengembalikan karakter pada indeks yang ditentukan dalam sebuah string (the CharAt):</p>
+	<p id="duarsyalala"></p>
+	<br></br>
+	<hr><hr>
+	<p class="duar">9. mengembalikan unicode karakter pada indeks yang ditentukan dalam string(CharCideAt)</p>
+	<p>Metode mengembalikan kode UTF-16 (bilangan bulat antara 0 dan 65535):.</p>
+	<p id="anybody"></p>
+	
+	<br></br>
+	<hr><hr>
+	<p class="duar">10. Akses Properti/memungkinkan akses properti [] pada string:</p>
+	<p id="winonaoak"></p>
+
+	<br></br>
+	<hr><hr>
+	<p class="duar">11. Mengubah String ke Array(split)</p>
+	
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="dudidu"></p>
+	<br></br>
+	<hr><hr>
+	
+
+	<h3>Javascript Event</h3>
+	<hr><hr>
+
+	<p class="duar">A. Onchange</p>
+	<p>PIlih salah satu Snack:</p>
+
+	<select id="mySelect" onchange="myFunc()">
+  	<option value="Lays">Lays</option>
+ 	 <option value="Cheetos">Cheetos</option>
+  	<option value="Tango">Tango</option>
+  	<option value="Roma">Roma</option>
+	</select>
+
+	<p>Ketika Anda memilih snack baru, sebuah fungsi dipicu yang menampilkan nilai snack yang dipilih</p>
+
+	<p id="snack"></p>
+	<hr><hr>
+	
+	<p class="duar">B. Onclick </p>
+	<button onclick="Syalala()">Klik saia</button>
+	<p id="dagadu"></p>	
+	<p>onclick=diklik/ditekan/dipencet<p>
+
+	<hr><hr>
+	<p class="duar">C. OnMouseOver</p>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Smiley" width="200" height="200">
+
+	<hr><hr>
+	
+	<p class="duar">D. OnMouseOut</p>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://www.motherjones.com/wp-content/uploads/2019/09/grey-wolf-9-26-19-1.jpg?w=990" alt="Smile" width="300" height="300">
+
+	<hr></hr>
+
+	<p class="duar">E. OnKeyDown</p>	
+	<input type="text" onkeydown="myFuncT()">
+</head>
+
+<body onload="myFuncti()">
+	<script>
+
+
+//jumlahstring
+var txt = "APAANHAYOOOOO";
+document.getElementById("demah").innerHTML = txt.length;
+
+//letakbarisString
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("where");
+document.getElementById("dadah").innerHTML = pos;
+
+//Mencariletak
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+document.getElementById("hiya").innerHTML = pos;
+
+//slicemethod/ekstrak
+var str = "masako, Royco, Magic Lezat";
+var res = str.slice(7,13);
+document.getElementById("demo").innerHTML = res;
+
+//substring
+var str = "melon, semangka, Kiwi";
+var res = str.substring(7,13);
+document.getElementById("dendang").innerHTML = res;
+
+//replace/mengganti
+function myFunction() {
+  var str = document.getElementById("dahar").innerHTML; 
+  var txt = str.replace("MieGacoan","Mie Judes");
+  document.getElementById("dahar").innerHTML = txt;
+}
+//konversbesar
+function myFunction() {
+  var text = document.getElementById("delicate").innerHTML;
+  document.getElementById("delicate").innerHTML = text.toUpperCase();
+}
+//konverskecil
+function myFunction() {
+  var text = document.getElementById("delo").innerHTML;
+  document.getElementById("delo").innerHTML = text.toLowerCase();
+}
+//konket/gabungin
+var text1 = "Helli";
+var text2 = "Gukgukguk";
+var text3 = text1.concat(" ",text2);
+document.getElementById("denda").innerHTML = text3;
+//thetrim
+function myFunction() {
+  var str = "     Misi nak sultan mo lewat     ";
+  alert(str.trim());
+}
+//theCharAt
+var str = "HATE ME";
+document.getElementById("duarsyalala").innerHTML = str.charAt(0);
+//charCodeAt
+var str = "HELLO WORLD";
+document.getElementById("anybody").innerHTML = str.charCodeAt(0);
+//propertyacces
+var str = "THAT WAS JUST HOPE";
+document.getElementById("winonaoak").innerHTML = str[0];
+//split
+function myFunction() {
+  var str = "a,b,c,d,e,f";
+  var arr = str.split(",");
+  document.getElementById("dudidu").innerHTML = arr[0];
+}
+//EVENTONCHANGE
+function myFunc() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("snack").innerHTML = "You selected: " + x;
+}
+//EVENTONCLICK
+function Syalala() {
+  document.getElementById("dagadu").innerHTML = "Duarr keluar tulisan";
+}
+//onmouseoverEVENT
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}	
+//onmouseoutEVENT
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+//onkeydownEVENT
+function myFuncT() {
+  alert("You pressed a key inside the input field");
+}
+//onloadEvent
+function myFuncti() {
+  alert("Page is loaded");
+}
+	</script>
+</body>
+</html>
